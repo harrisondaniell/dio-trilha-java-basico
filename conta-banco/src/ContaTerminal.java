@@ -9,8 +9,8 @@ public class ContaTerminal {
         sc.nextLine();
 
         System.out.println("Digite o numero da sua agência: ");
-        String agencia = sc.next();
-        sc.nextLine();
+        String agencia = sc.nextLine();
+
 
         System.out.println("Digite o seu nome completo: ");
         String nome = sc.nextLine();
@@ -21,6 +21,9 @@ public class ContaTerminal {
 
         System.out.printf("Numero da conta: %d %nNumero da agência: %s %nNome do titular: %s%nSaldo atual: %.2f",
                 numero, agencia, nome, saldo);
+
+        sc.close();
+
 
     }
 }
